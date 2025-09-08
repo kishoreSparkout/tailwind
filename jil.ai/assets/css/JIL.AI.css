@@ -1,0 +1,133 @@
+body {
+  background-color: #000411;
+  position: relative;
+  z-index: 10;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-syne {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
+
+input[type=checkbox]:checked
+{
+  background-image:url(../images/tick-checkbox.svg);
+  background-repeat: no-repeat;
+}
+
+.font-syne-sans {
+  font-family: "Syne", sans-serif;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.nav-link.active {
+  color: #24F3EA;
+}
+
+.nav-link.active::after {
+  opacity: 1;
+
+}
+
+.top-image {
+  background-image: url(../images/top-blue-blur.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: top center;
+  height: 820px;
+  width: 100%;
+  z-index: -1;
+  background-size: 100% 100%;
+}
+
+.mid-blur {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/mid-blue-blur-transparency.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 1579px;
+  z-index: -1;
+}
+
+.mid-blur-mid {
+  position: absolute;
+  left: 0;
+  top: -110px;
+  background-image: url(../images/mid-blue-blur-transparency.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 1437px;
+  width: 100%;
+  z-index: -1;
+}
+.body-image {
+  background-image: url(../images/body-bg.png);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+.bottom-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/bottom-blue-blur.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@keyframes line-scale {
+  0%, 50%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.3);
+  }
+  100%{transform: scaleY(1);
+  }
+}
+
+.line-scale {
+    animation: line-scale 1s -0.1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+
+
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
